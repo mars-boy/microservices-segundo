@@ -1,0 +1,29 @@
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+server:
+  port: 8765
+
+ribbon:
+  eureka:
+    enabled: true
+
+zuul:
+  prefix: /mars
+  routes:
+    account:
+      path: /account/**
+      serviceId: account-service
+    expenses:
+      path: /expenses/**
+      serviceId: expenses-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
