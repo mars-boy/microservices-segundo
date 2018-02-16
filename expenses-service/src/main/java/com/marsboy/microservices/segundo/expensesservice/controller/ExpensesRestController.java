@@ -15,7 +15,7 @@ public class ExpensesRestController {
     @Autowired
     private AccountClientService accountClientService;
 
-    @GetMapping(value = "/explists")
+    @GetMapping(value = "/common/explists")
     public List<String> getList(){
         List<String> list = new ArrayList<String>(accountClientService.getAllList());
         list.add("hakuna matata");

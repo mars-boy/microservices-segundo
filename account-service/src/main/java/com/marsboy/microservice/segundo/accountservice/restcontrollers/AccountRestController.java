@@ -13,12 +13,9 @@ public class AccountRestController {
 
     public AccountRestController(){
         list = new ArrayList<String>();
-        list.add("nigga");
-        list.add("black panther");
-        list.add("kendrik lamar");
-        list.add("Obama");
-        list.add("You fking racist");
-        list.add("wtf");
+        for(int i = 0; i < 6;i++){
+            list.add("list"+i);
+        }
     }
 
     @GetMapping("/lists")
