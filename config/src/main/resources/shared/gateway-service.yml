@@ -24,6 +24,10 @@ zuul:
       path: /expenses/**
       serviceId: expenses-service
       sensitive-headers:
+    dlearnservice:
+      path: /dlearn/**
+      serviceId: deeplearnsidecar-service
+      sensitive-headers:
 
 eureka:
   client:
