@@ -12,3 +12,12 @@ I just tried to implement all microservices concepts into one simple project whi
 - [dlearn-Python-service](#dlearn-Python-service)
 
 ## config
+This service externalize all other microservice configuration i used classpath implementation other than git lookup for configurations.
+
+## discovery-service
+It's just eureka server just a proxy based api gateway you can find more details [here](https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance)
+
+## gateway-service
+Zuul acts as an API gateway. It takes requests coming from external sources(UI) and delegate it to internal microservices you can find more details [here](https://github.com/Netflix/zuul)
+
+ 
