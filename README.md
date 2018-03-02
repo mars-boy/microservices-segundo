@@ -1,5 +1,5 @@
 # Microservices
-I just tried to implement all microservices concepts into one simple project which will come in handy for developers who wanted to Learn and implement.
+A sample microservice application that describes almost every microservice concept.
 
 ## Modules
 - [config](#config)
@@ -15,13 +15,15 @@ I just tried to implement all microservices concepts into one simple project whi
 This service externalize all other microservice configuration i used classpath implementation other than git lookup for configurations.
 
 ## discovery-service
-It's just eureka server just a proxy based api gateway you can find more details [here](https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance)
+It's just eureka server a proxy based api gateway you can find more details [here](https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance)
 
 ## gateway-service
 Zuul acts as an API gateway. It takes requests coming from external sources(UI) and delegate it to internal microservices you can find more details [here](https://github.com/Netflix/zuul)
 
 ## zipkin-service
 It is used to trace a request as it pass it through number of microservices and measure processing time in each microservice you can find more details [here](https://github.com/openzipkin/zipkin)
+
+zipkin traces can be viewed under [localhost:9411](localhost:9411/zipkin/)
 
 ## account-service
 It's just a simple microservice that deal with accounts domain.
