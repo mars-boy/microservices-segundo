@@ -33,3 +33,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+      baseurl: http://localhost:9411/
